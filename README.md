@@ -1,10 +1,9 @@
-# Tier2 Support Playbook
+# Tech Support Playbook
 
-This repository contains:
 - Linux Commands
 - SQL Queries
-- Useful links
+- Bookmarks
 - Troubleshooting Guides 📘
 - Shell scripts 🛠
 - Cloud Watch Insignts 📊
-- Sample logs for analysis 📂
+- Docker 
