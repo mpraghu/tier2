@@ -1,9 +1,8 @@
-How to get lvadmin privileges on servers
+Get admin privileges 
 
 * sudo -H -i -u lvadmin
--------------------------------------------------------------
+---
 
-* wget -vX POST http://wrapper.livevox.com/wso2/services/owtrta/card/payment
 
 To check the Average CPU Time of a Process
 
@@ -15,10 +14,20 @@ ps uH p <PID_OF_U_PROCESS> | wc -l
 
 ---
   The following command will show the list of top processes ordered by RAM and CPU use in descendant form (remove the pipeline and head if you want to see the full list):
+  
   * ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
  ----
+https://curl.se/docs/manpage.html
 
-* curl -d 'clientid=3171034&cip=0' http://que1063.na6.oh1.livevox.net:8080/queuer_17.0//acct-setcip
+* curl -d 'clientid=3171034&cip=0' http://host.domain.net:8080/queuer_17.0//acct-setcip
+  
+curl -d, --data <data>
+
+(HTTP MQTT) Send the specified data in a POST request to the HTTP server, in the same way that a browser does when a user has filled in an HTML form and presses the submit button. This option makes curl pass the data to the server using the content-type application/x-www-form-urlencoded. 
+
+*  wget -vX POST http://wrapper.livevox.com/wso2/services/owtrta/card/payment
+
+  
 ----
  uptime
  
