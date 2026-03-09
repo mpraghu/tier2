@@ -1,7 +1,6 @@
-# Tier2 Support Playbook
-
-This repository contains:
-- Troubleshooting Guides 📘
-- Scripts 🛠
-- Monitoring guides 📊
-- Sample logs for analysis 📂
+Tech Support Playbook
+Linux Commands
+SQL Queries
+Shell scripts 🛠
+Cloud Watch Insignts 📊
+devops-with-docker-kubernetes-and-azure-devops 
