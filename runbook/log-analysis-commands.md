@@ -225,4 +225,68 @@ Debug **data import failures while ignoring normal informational logs**.
 
 ---
 
-senior SREs use — adding those would make your GitHub **very impressive for DevOps or support interviews**.
+# Advanced Log Analysis
+
+## Search compressed logs modified in last 5 minutes
+
+```bash
+find /export/livevox_logs/pdas10/logs -type f -mmin -5 -exec zgrep "updateContactDnd call complete" {} \;
+```
+
+**Explanation**
+
+| Option     | Meaning                          |
+| ---------- | -------------------------------- |
+| `-mmin -5` | Files modified in last 5 minutes |
+| `-exec`    | Execute command on each file     |
+| `zgrep`    | Search inside compressed logs    |
+
+---
+
+## Search logs with context
+
+```bash
+grep -C 5 723451 app.log.2020-05-18-14 | less
+```
+
+**Explanation**
+
+| Option | Meaning                             |
+| ------ | ----------------------------------- |
+| `-C 5` | Show 5 lines before and after match |
+| `less` | Scrollable viewer                   |
+
+---
+
+## Search special characters in logs
+
+```bash
+grep "[]:/?#@\!\$&'()*+,;=%[]"
+```
+
+Used when logs contain **special characters or encoded URLs**.
+
+---
+
+# 12. Useful Shell Aliases
+
+Example `.bashrc` shortcuts:
+
+```bash
+cd /var/livevox_logs/
+
+alias ll="ls -lta | more"
+
+alias ps="ps -ef | grep java"
+```
+
+---
+
+# 13. Quick Log & Service Checks
+
+### View last 20 lines of log
+
+```bash
+tail -n 20 /var/livevox_logs/11.0_dsi126_8100/app.log
+```
+
