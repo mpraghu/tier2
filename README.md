@@ -1,12 +1,10 @@
-Tech Support Playbook
 
-Linux Commands
+# Tech Support Playbook
 
-SQL Queries
-
-Shell scripts 🛠
-
-Cloud Watch Insignts 📊
-
-devops-with-docker-kubernetes-and-azure-devops 
-
+- Linux Commands
+- SQL Queries
+- Bookmarks
+- Troubleshooting Guides 📘
+- Shell scripts 🛠
+- Cloud Watch Insignts 📊
+- Docker 
