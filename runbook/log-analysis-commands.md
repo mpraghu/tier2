@@ -1,4 +1,4 @@
-# Linux Log Investigation Commands (Used in Production servers formatted using chatgpt)
+# Linux Log Investigation Commands 
 
 ## 1. Extract logs between two timestamps and filter by ID
 
